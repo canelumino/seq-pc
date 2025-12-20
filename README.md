@@ -1,6 +1,4 @@
-SEQ-PC: Hopefully explained
-1. System Architecture Overview
-SEQ-PC is composed of four major systems: dataset builder, statistical normalization, the sequence modeling architecture (BiLSTM + Mixture-of-Experts), and the inference engine with stylistic shaping mechanisms.
+The SEQ-PC model is composed of four major systems: dataset builder, statistical normalization, the sequence modeling architecture (BiLSTM + Mixture-of-Experts), and the inference engine with stylistic shaping mechanisms.
 1. High-Level Architecture
 
              ┌────────────────────┐
