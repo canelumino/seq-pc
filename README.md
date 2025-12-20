@@ -1,11 +1,12 @@
 
+This project is an automatic pitch-tuning engine for UTAU UST files, focused exclusively on pitch curves and vibrato generation.
+It takes an untuned UST as input and outputs a musically tuned version, without modifying timing, volume, flags, or phoneme content.
 
 https://github.com/user-attachments/assets/d6a03fbc-f808-49c5-ab66-25bf9b2323fc
 
 
 
-This project is an automatic pitch-tuning engine for UTAU UST files, focused exclusively on pitch curves and vibrato generation.
-It takes an untuned UST as input and outputs a musically tuned version, without modifying timing, volume, flags, or phoneme content.
+See below for an haphazardly put together architecture explanation
 
 
 ![SEQ-PC docx_page-0001](https://github.com/user-attachments/assets/d697d693-755f-4902-8c4e-7fc928b2232f)
