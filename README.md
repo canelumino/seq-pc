@@ -36,28 +36,28 @@ The SEQ-PC model is composed of four major systems: dataset builder, statistical
 
 2. Data Flow
  `  `  `
-UST File
-   │
-   ▼
-┌──────────────────────────┐
-│ ust_parser               │
-│ - load notes             │
-│ - extract PBS/PBW/PBY    │
-│ - extract VBR            │
-│ - detect rests/phrases   │
-└───────────┬──────────────┘
-            │ samples
-            ▼
-┌──────────────────────────┐
-│ dataset_builder.py       │
-│ - tempo, tempo_bucket    │
-│ - length_bucket          │
-│ - prev/next intervals    │
-│ - output → CSV row       │
-└───────────┬──────────────┘
-            │ CSV dataset
-            ▼
-info/dataset_notes.csv
+          UST File
+             │
+             ▼
+          ┌──────────────────────────┐
+          │ ust_parser               │
+          │ - load notes             │
+          │ - extract PBS/PBW/PBY    │
+          │ - extract VBR            │
+          │ - detect rests/phrases   │
+          └───────────┬──────────────┘
+                      │ samples
+                      ▼
+          ┌──────────────────────────┐
+          │ dataset_builder.py       │
+          │ - tempo, tempo_bucket    │
+          │ - length_bucket          │
+          │ - prev/next intervals    │
+          │ - output → CSV row       │
+          └───────────┬──────────────┘
+                      │ CSV dataset
+                      ▼
+          info/dataset_notes.csv
  `  `  ` 
 
 4. SEQ-PC Model Architecture
