@@ -35,6 +35,7 @@ The SEQ-PC model is composed of four major systems: dataset builder, statistical
               └──────────────────────┘
 
 2. Data Flow
+ `  `  `
 UST File
    │
    ▼
@@ -57,11 +58,12 @@ UST File
             │ CSV dataset
             ▼
 info/dataset_notes.csv
+ `  `  ` 
 
-3. SEQ-PC Model Architecture
+4. SEQ-PC Model Architecture
 The model integrates a bidirectional LSTM encoder with a three-expert Mixture-of-Experts (MoE) output layer. The experts specialize in short, medium, and long note categories. A gating network assigns per-note expert weights.
 
-
+ `  `  ` 
                  Sequence Input
      lyric ids ─────────────┐
  numeric features ──────────┘
@@ -89,10 +91,10 @@ The model integrates a bidirectional LSTM encoder with a three-expert Mixture-of
                         │
                         ▼
             Predicted Pitch Parameters
-
-4. Inference Pipeline
+ `  `  ` 
+5. Inference Pipeline
 During inference,the model predicts pitch control parameters and then applies multiple stylistic shaping passes.
-
+ `  `  ` 
 UST Input
    │
    ▼
@@ -112,11 +114,10 @@ UST Writer
    │ formatted PBS/PBW/PBY/VBR
    ▼
 Final Tuned UST
-
+ `  `  ` 
 5. Post-Processing 
 Post-processing stabilizes and stylizes the output so that the model's raw remains musically usable.
-
-
+ `  `  ` 
 Raw PBY Curve from Model
             │
             ▼
@@ -143,4 +144,4 @@ Raw PBY Curve from Model
               │ final curves
               ▼
     Output PBY for UST
-
+ `  `  ` 
