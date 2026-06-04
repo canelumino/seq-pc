@@ -1,6 +1,6 @@
 
 This project is an automatic pitch-tuning engine for UTAU UST files, focused exclusively on pitch curves and vibrato generation.
-It takes an untuned UST as input and outputs a musically tuned version, without modifying timing, volume, flags, or phoneme content.
+It takes an untuned UST as input and outputs a musically tuned version.
 
 https://github.com/user-attachments/assets/d6a03fbc-f808-49c5-ab66-25bf9b2323fc
 
